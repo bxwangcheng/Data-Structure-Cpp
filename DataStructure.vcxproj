@@ -124,6 +124,14 @@
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Graph.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\MainGraph.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Node.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise01_Trie.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise02_UnionFind.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise03_KMP.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise04_Manacher.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise05_SlidingWindow.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise06_MonotonousStack.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise07_MorrisTraversal.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\MainAdvanced.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data-Structure-Cpp\main.cpp" />

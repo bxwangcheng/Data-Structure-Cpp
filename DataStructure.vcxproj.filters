@@ -9,11 +9,6 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
-      <Extensions>qrc;*</Extensions>
-      <ParseFiles>false</ParseFiles>
-    </Filter>
     <Filter Include="Form Files">
       <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
       <Extensions>ui</Extensions>
@@ -37,6 +32,14 @@
     </Filter>
     <Filter Include="Header Files\00.BasicTools">
       <UniqueIdentifier>{0fec5cbe-d74f-42be-b9b5-afccae991ec0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\05.Advanced">
+      <UniqueIdentifier>{31ad7fb9-cad4-4410-b0f5-41275eb87943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -140,6 +143,30 @@
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Node.h">
       <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise01_Trie.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise02_UnionFind.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise03_KMP.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise04_Manacher.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise06_MonotonousStack.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise05_SlidingWindow.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise07_MorrisTraversal.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\MainAdvanced.h">
+      <Filter>Header Files\05.Advanced</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
