@@ -45,105 +45,105 @@
     </QtRcc>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise01_SelectionSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise02_BubbleSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise03_InsertionSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise04_HeapSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise05_MergeSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise06_QuickSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise07_BinarySearch.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\02.LinkedList\Exercise01_ReverseLinkedList.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="src\02.LinkedList\Exercise02_ListPartition.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="src\02.LinkedList\Exercise03_ListDuplicate.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="src\02.LinkedList\Exercise04_DoublePointer.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="src\03.BinaryTree\Exercise01_RecurTraversal.h">
-      <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="src\03.BinaryTree\Exercise02_UnrecurTraversal.h">
-      <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="src\03.BinaryTree\Exercise03_TreeDP.h">
-      <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Edge.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise01_BFS.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise02_DFS.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise03_TopologySort.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise04_Kruskal.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise05_Prim.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise06_Dijkstra.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Graph.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Node.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\MainSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\02.LinkedList\MainLinkedList.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="src\03.BinaryTree\MainTree.h">
-      <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\MainGraph.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Exercise00_ListTools.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="src\01.Sort&amp;Search\Exercise00_SortTools.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
-    <ClInclude Include="src\03.BinaryTree\Exercise00_TreeTools.h">
-      <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="src\04.Graph\Exercise00_GraphTools.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="src\00.BasicTools\basic.h">
+    <ClInclude Include="Data-Structure-Cpp\00.BasicTools\basic.h">
       <Filter>Header Files\00.BasicTools</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise00_SortTools.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise01_SelectionSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise02_BubbleSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise03_InsertionSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise04_HeapSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise05_MergeSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise06_QuickSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise07_BinarySearch.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\MainSort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise00_ListTools.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise01_ReverseLinkedList.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise02_ListPartition.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise03_ListDuplicate.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise04_DoublePointer.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\MainLinkedList.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise00_TreeTools.h">
+      <Filter>Header Files\03.BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise01_RecurTraversal.h">
+      <Filter>Header Files\03.BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise02_UnrecurTraversal.h">
+      <Filter>Header Files\03.BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise03_TreeDP.h">
+      <Filter>Header Files\03.BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\MainTree.h">
+      <Filter>Header Files\03.BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Edge.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphTools.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise01_BFS.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise02_DFS.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise03_TopologySort.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise04_Kruskal.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise05_Prim.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise06_Dijkstra.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Graph.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\MainGraph.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Node.h">
+      <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="Data-Structure-Cpp\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

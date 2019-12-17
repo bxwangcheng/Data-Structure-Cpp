@@ -86,5 +86,3 @@ BinaryListNode* generate_random_binary_list(int max_size, int max_value) {
 	}
 	return head;
 }
-
-BinaryListNode*
