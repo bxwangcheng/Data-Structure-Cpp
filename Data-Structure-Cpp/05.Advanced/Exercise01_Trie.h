@@ -32,15 +32,59 @@ public:
 
 public:
 	void insert(string word) {
-
+		if (&word == nullptr) {
+			return;
+		}
+		if (word != "") {
+			root->pass++;
+		}
+		int index = -1;
+		TrieNode* cur = root;
+		for (int i = 0; i < word.size(); i++) {
+			index = word[i] - 'a';
+			if (cur->ways[index] == nullptr) {
+				cur->ways[index] = new TrieNode();
+			}
+			cur = cur->ways[index];
+			cur->pass++;
+		}
+		cur->end++;
 	}
 
 	void remove(string word) {
-
+		if (&word == nullptr) {
+			return;
+		}
+		int index = -1;
+		TrieNode* cur = root;
+		for (int i = 0; i < word.size(); i++) {
+			index = word[i] - 'a';
+			if (--cur->ways[index]->pass == 0) {
+				cur->ways[index] = nullptr;
+				return;
+			}
+			cur = cur->ways[index];
+		}
+		cur->end--;
 	}
 
 	int search(string word) {
-		return 0;
+		if (&word == nullptr) {
+			return -1;
+		}
+		int index = -1;
+		TrieNode* cur = root;
+		for (int i = 0; i < word.size(); i++) {
+			index = word[i] - 'a';
+			if (cur->ways[index] != nullptr) {
+				cur = cur->ways[index];
+			}
+			else
+			{
+				return 0;
+			}
+		}
+		return cur->end;
 	}
 
 	int prefix_number(string pre) {
