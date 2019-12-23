@@ -1,8 +1,8 @@
 #pragma once
 #include <unordered_map>
 #include <unordered_set>
-#include "Node.h"
-#include "Edge.h"
+#include "Exercise00_Node.h"
+#include "Exercise00_Edge.h"
 
 using namespace std;
 

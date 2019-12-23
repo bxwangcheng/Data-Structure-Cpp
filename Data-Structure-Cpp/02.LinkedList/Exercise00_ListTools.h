@@ -37,7 +37,7 @@ void print_linked_list(ListNode* head) {
 		cur = cur->next;
 	}
 	output += "null";
-	print_to_console(output);
+	print_to_console_ln(output);
 }
 
 void print_linked_list(BinaryListNode* head) {
@@ -48,14 +48,14 @@ void print_linked_list(BinaryListNode* head) {
 		cur = cur->next;
 	}
 	output += to_string(cur->value) + "->null";
-	print_to_console(output);
+	print_to_console_ln(output);
 	output = "";
 	while (cur != nullptr) {
 		output += to_string(cur->value) + "->";
 		cur = cur->last;
 	}
 	output += "null";
-	print_to_console(output);
+	print_to_console_ln(output);
 }
 
 ListNode* generate_random_list(int max_size, int max_value) {
@@ -83,6 +83,19 @@ BinaryListNode* generate_random_binary_list(int max_size, int max_value) {
 		cur->next->last = cur;
 		cur = cur->next;
 		size--;
+	}
+	return head;
+}
+
+ListNode* generate_list(vector<int> arr) {
+	if (arr.size() < 1 || &arr == nullptr) {
+		return nullptr;
+	}
+	ListNode* head = new ListNode(arr[0]);
+	ListNode* cur = head;
+	for (int i = 1; i < arr.size(); i++) {
+		cur->next = new ListNode(arr[i]);
+		cur = cur->next;
 	}
 	return head;
 }

@@ -1,5 +1,5 @@
 #pragma once
 #include "../00.BasicTools/basic.h"
-#include "Graph.h"
-#include "Edge.h"
-#include "Node.h"
+#include "Exercise00_Edge.h"
+#include "Exercise00_Graph.h"
+#include "Exercise00_Node.h"

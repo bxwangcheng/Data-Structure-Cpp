@@ -13,11 +13,6 @@
       <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
       <Extensions>ui</Extensions>
     </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
-      <Extensions>qrc;*</Extensions>
-      <ParseFiles>false</ParseFiles>
-    </Filter>
     <Filter Include="Header Files\01.Sort&amp;Search">
       <UniqueIdentifier>{cfe5e0e7-1661-41d6-a357-e3764967d105}</UniqueIdentifier>
     </Filter>
@@ -41,11 +36,6 @@
       <Extensions>qrc;*</Extensions>
       <ParseFiles>false</ParseFiles>
     </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <QtRcc Include="DataStructure.qrc">
-      <Filter>Resource Files</Filter>
-    </QtRcc>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Data-Structure-Cpp\00.BasicTools\basic.h">
@@ -75,9 +65,6 @@
     <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise07_BinarySearch.h">
       <Filter>Header Files\01.Sort&amp;Search</Filter>
     </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\MainSort.h">
-      <Filter>Header Files\01.Sort&amp;Search</Filter>
-    </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise00_ListTools.h">
       <Filter>Header Files\02.LinkedList</Filter>
     </ClInclude>
@@ -93,9 +80,6 @@
     <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise04_DoublePointer.h">
       <Filter>Header Files\02.LinkedList</Filter>
     </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\MainLinkedList.h">
-      <Filter>Header Files\02.LinkedList</Filter>
-    </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise00_TreeTools.h">
       <Filter>Header Files\03.BinaryTree</Filter>
     </ClInclude>
@@ -107,12 +91,6 @@
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise03_TreeDP.h">
       <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\MainTree.h">
-      <Filter>Header Files\03.BinaryTree</Filter>
-    </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Edge.h">
-      <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphTools.h">
       <Filter>Header Files\04.Graph</Filter>
@@ -133,15 +111,6 @@
       <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise06_Dijkstra.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Graph.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\MainGraph.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Node.h">
       <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise01_Trie.h">
@@ -165,8 +134,29 @@
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise07_MorrisTraversal.h">
       <Filter>Header Files\05.Advanced</Filter>
     </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\MainAdvanced.h">
+    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\main_sort.h">
+      <Filter>Header Files\01.Sort&amp;Search</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\main_list.h">
+      <Filter>Header Files\02.LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\main_tree.h">
+      <Filter>Header Files\03.BinaryTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\main_graph.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\main_advanced.h">
       <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Edge.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Node.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Graph.h">
+      <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
