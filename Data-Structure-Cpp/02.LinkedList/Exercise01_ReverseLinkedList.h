@@ -1,31 +1,31 @@
 #include "Exercise00_ListTools.h"
 
-ListNode* reverse_list(ListNode* head) {
+ListNode* ReverseLinkedList(ListNode* head) {
 	if (head == nullptr) {
 		return nullptr;
 	}
 	ListNode* last = nullptr;
 	ListNode* next = nullptr;
 	while (head != nullptr) {
-		next = head->next;
-		head->next = last;
+		next = head->next_;
+		head->next_ = last;
 		last = head;
 		head = next;
 	}
 	return last;
 }
 
-BinaryListNode* reverse_list(BinaryListNode* head) {
+BinaryListNode* ReverseLinkedList(BinaryListNode* head) {
 	if (head == nullptr) {
 		return nullptr;
 	}
 	BinaryListNode* last = nullptr;
 	BinaryListNode* next = nullptr;
 	while (head != nullptr) {
-		next = head->next;
-		last = head->last;
-		head->next = last;
-		head->last = next;
+		next = head->next_;
+		last = head->last_;
+		head->next_ = last;
+		head->last_ = next;
 		last = head;
 		head = next;
 	}

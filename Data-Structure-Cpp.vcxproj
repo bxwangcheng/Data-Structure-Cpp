@@ -111,7 +111,7 @@
     <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise02_UnrecurTraversal.h" />
     <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise03_TreeDP.h" />
     <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\main_tree.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Edge.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphEdge.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphTools.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise01_BFS.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise02_DFS.h" />
@@ -121,7 +121,7 @@
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise06_Dijkstra.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Graph.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\main_graph.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Node.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphNode.h" />
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise01_Trie.h" />
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise02_UnionFind.h" />
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise03_KMP.h" />

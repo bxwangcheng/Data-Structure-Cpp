@@ -9,7 +9,7 @@ using std::string;
 using std::sort;
 using std::to_string;
 
-vector<int> generate_random_vector(int max_size, int max_value) {
+vector<int> GenerateArray(int max_size, int max_value) {
 	srand((unsigned)time(nullptr));
 	vector<int> res;
 	int size = (rand() % (max_size + 1));
@@ -20,7 +20,7 @@ vector<int> generate_random_vector(int max_size, int max_value) {
 	return res;
 }
 
-vector<vector<int>> generate_random_matrix(int max_size, int max_value) {
+vector<vector<int>> GenerateMatrix(int max_size, int max_value) {
 	srand((unsigned)time(nullptr));
 	int size = (rand() % (max_size + 1));
 	vector<vector<int>> res(size, vector<int>(size));
@@ -33,15 +33,15 @@ vector<vector<int>> generate_random_matrix(int max_size, int max_value) {
 	return res;
 }
 
-void print_vector(vector<int>& x) {
+void Print(vector<int>& x) {
 	string output = "";
 	for (int i = 0; i < x.size(); i++) {
 		output += to_string(x[i]) + " ";
 	}
-	print_to_console_ln(output);
+	Println(output);
 }
 
-void print_matrix(vector<vector<int>>& x) {
+void Print(vector<vector<int>>& x) {
 	string output = "";
 	for (int j = 0; j < x.size(); j++) {
 		string row = "";
@@ -50,10 +50,10 @@ void print_matrix(vector<vector<int>>& x) {
 		}
 		output += row + "\n";
 	}
-	print_to_console_ln(output);
+	Println(output);
 }
 
-void swap(vector<int>& x, int a, int b) {
+void Swap(vector<int>& x, int a, int b) {
 	if (a == b) {
 		return;
 	}
@@ -62,11 +62,11 @@ void swap(vector<int>& x, int a, int b) {
 	x[b] = tmp;
 }
 
-void comparator(vector<int>& x) {
+void Comparator(vector<int>& x) {
 	sort(x.begin(), x.end());
 }
 
-bool equal(vector<int>& x, vector<int>& y) {
+bool Equal(vector<int>& x, vector<int>& y) {
 	if (&x == nullptr || &y == nullptr || (x.size() != y.size()) ) {
 		return false;
 	}

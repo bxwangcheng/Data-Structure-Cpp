@@ -16,10 +16,10 @@ void test_trie(void) {
 	trie->insert("");
 	trie->insert("ab");
 	trie->insert("abced");
-	print_to_console_ln(trie->search(""));
+	Println(trie->search(""));
 	trie->remove("abcd");
 	trie->remove("");
-	print_to_console_ln(trie->search(""));
+	Println(trie->search(""));
 }
 
 void unionfind_main(void) {

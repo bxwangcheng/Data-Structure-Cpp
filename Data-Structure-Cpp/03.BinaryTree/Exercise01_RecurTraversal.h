@@ -1,39 +1,43 @@
 #include "Exercise00_TreeTools.h"
 
-void recur_traversal(TreeNode* head) {
+/*¶þ²æÊ÷µÝ¹éÐò±éÀú£¨µÝ¹é£©*/
+void RecurTraversal(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	print_to_console(head->value + " ");
-	recur_traversal(head->left);
-	print_to_console(head->value + " ");
-	recur_traversal(head->right);
-	print_to_console(head->value + " ");
+	Print(head->value_ + " ");
+	RecurTraversal(head->left_);
+	Print(head->value_ + " ");
+	RecurTraversal(head->right_);
+	Print(head->value_ + " ");
 }
 
-void pre_traversal_recur(TreeNode* head) {
+/*¶þ²æÊ÷ÏÈÐò±éÀú£¨µÝ¹é£©*/
+void PreTraversalRecur(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	print_to_console(head->value + " ");
-	pre_traversal_recur(head->left);
-	pre_traversal_recur(head->right);
+	Print(head->value_ + " ");
+	PreTraversalRecur(head->left_);
+	PreTraversalRecur(head->right_);
 }
 
-void mid_traversal_recur(TreeNode* head) {
+/*¶þ²æÊ÷ÖÐÐò±éÀú£¨µÝ¹é£©*/
+void MidTraversalRecur(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	mid_traversal_recur(head->left);
-	print_to_console(head->value + " ");
-	mid_traversal_recur(head->right);
+	MidTraversalRecur(head->left_);
+	Print(head->value_ + " ");
+	MidTraversalRecur(head->right_);
 }
 
-void pos_traversal_recur(TreeNode* head) {
+/*¶þ²æÊ÷ºóÐò±éÀú£¨µÝ¹é£©*/
+void PosTraversalRecur(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	pos_traversal_recur(head->left);
-	pos_traversal_recur(head->right);
-	print_to_console(head->value + " ");
+	PosTraversalRecur(head->left_);
+	PosTraversalRecur(head->right_);
+	Print(head->value_ + " ");
 }

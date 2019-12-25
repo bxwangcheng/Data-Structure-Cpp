@@ -1,6 +1,6 @@
 #include "Exercise00_ListTools.h"
 
-ListNode* partition(ListNode* head, int value) {
+ListNode* Partition(ListNode* head, int value) {
 	if (head == nullptr) {
 		return nullptr;
 	}
@@ -11,40 +11,40 @@ ListNode* partition(ListNode* head, int value) {
 	ListNode* bigger_head = nullptr;
 	ListNode* bigger_tail = nullptr;
 	while (head != nullptr) {
-		if (head->value < value) {
+		if (head->value_ < value) {
 			if (smaller_head == nullptr) {
-				smaller_head = new ListNode(head->value);
+				smaller_head = new ListNode(head->value_);
 				smaller_tail = smaller_head;
-				smaller_head->next = smaller_tail;
+				smaller_head->next_ = smaller_tail;
 			}
 			else {
-				smaller_tail->next = new ListNode(head->value);
-				smaller_tail = smaller_tail->next;
+				smaller_tail->next_ = new ListNode(head->value_);
+				smaller_tail = smaller_tail->next_;
 			}
 		}
-		else if (head->value > value) {
+		else if (head->value_ > value) {
 			if (bigger_head == nullptr) {
-				bigger_head = new ListNode(head->value);
+				bigger_head = new ListNode(head->value_);
 				bigger_tail = bigger_head;
-				bigger_head->next = bigger_tail;
+				bigger_head->next_ = bigger_tail;
 			}
 			else {
-				bigger_tail->next = new ListNode(head->value);
-				bigger_tail = bigger_tail->next;
+				bigger_tail->next_ = new ListNode(head->value_);
+				bigger_tail = bigger_tail->next_;
 			}
 		}
 		else {
 			if (equal_head == nullptr) {
-				equal_head = new ListNode(head->value);
+				equal_head = new ListNode(head->value_);
 				equal_tail = equal_head;
-				equal_head->next = equal_tail;
+				equal_head->next_ = equal_tail;
 			}
 			else {
-				equal_tail->next = new ListNode(head->value);
-				equal_tail = equal_tail->next;
+				equal_tail->next_ = new ListNode(head->value_);
+				equal_tail = equal_tail->next_;
 			}
 		}
-		head = head->next;
+		head = head->next_;
 	}
 	int type = 7;
 	if (smaller_head == nullptr) {
@@ -67,23 +67,23 @@ ListNode* partition(ListNode* head, int value) {
 		return equal_head;
 
 	case 3:
-		equal_tail->next = bigger_head;
+		equal_tail->next_ = bigger_head;
 		return equal_head;
 
 	case 4:
 		return smaller_head;
 
 	case 5:
-		smaller_tail->next = bigger_head;
+		smaller_tail->next_ = bigger_head;
 		return smaller_head;
 
 	case 6:
-		smaller_tail->next = equal_head;
+		smaller_tail->next_ = equal_head;
 		return smaller_head;
 
 	case 7:
-		smaller_tail->next = equal_head;
-		equal_tail->next = bigger_head;
+		smaller_tail->next_ = equal_head;
+		equal_tail->next_ = bigger_head;
 		return smaller_head;
 	}
 }

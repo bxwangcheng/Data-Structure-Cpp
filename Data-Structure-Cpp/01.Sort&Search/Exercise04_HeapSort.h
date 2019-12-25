@@ -4,18 +4,18 @@ class HeapNode {
 
 public:
 	HeapNode(int value) :
-		value(value),
-		left(nullptr),
-		right(nullptr)
+		value_(value),
+		left_(nullptr),
+		right_(nullptr)
 	{}
 
 public:
-	int value;
-	HeapNode* left;
-	HeapNode* right;
+	int value_;
+	HeapNode* left_;
+	HeapNode* right_;
 };
 
-//void heap_sort(vector<int>& x) {
+//void HeapSort(vector<int>& x) {
 //	if (x.size() < 2 || &x == nullptr) {
 //		return;
 //	}
@@ -25,10 +25,10 @@ public:
 //	}
 //}
 //
-//void heapify(HeapNode* head) {
+//void Heapify(HeapNode* head) {
 //
 //}
 //
-//void heap_insert(HeapNode* head) {
+//void HeapInsert(HeapNode* head) {
 //
 //}

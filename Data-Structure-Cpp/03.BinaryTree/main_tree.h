@@ -41,8 +41,10 @@ void test_tree(void) {
     n23->right = n36;
     n24->left = n37;
     n24->right = n38;*/
-    TreeNode* head = build_test_tree();
-	width_traversal_unrecur(head);
+    TreeNode* head = BuildTestTree(0);
+    PreTraversalUnrecur(head);
+    //Println(BalancedTree(head));
 	//printNode(root);
+  
 }
 

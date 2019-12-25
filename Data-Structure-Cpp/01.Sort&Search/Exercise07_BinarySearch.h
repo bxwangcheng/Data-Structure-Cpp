@@ -1,6 +1,6 @@
 #include "Exercise00_SortTools.h"
 
-int binary_search(vector<int>& x, int value) {
+int BinarySearch(vector<int>& x, int value) {
 	if (x.size() < 1 || &x == nullptr) {
 		return -1;
 	}
@@ -21,7 +21,7 @@ int binary_search(vector<int>& x, int value) {
 	return l;
 }
 
-int leftmost(vector<int>& x, int value) {
+int Leftmost(vector<int>& x, int value) {
 	if (x.size() < 1 || &x == nullptr) {
 		return -1;
 	}
@@ -41,7 +41,7 @@ int leftmost(vector<int>& x, int value) {
 	}
 }
 
-int rightmost(vector<int>& x, int value) {
+int Rightmost(vector<int>& x, int value) {
 	if (x.size() < 1 || &x == nullptr) {
 		return -1;
 	}

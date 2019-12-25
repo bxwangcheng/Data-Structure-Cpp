@@ -1,20 +1,20 @@
 #include "Exercise00_SortTools.h"
 
-void merge_sort(vector<int>& vec);
-vector<int> process(vector<int>& vec, int l, int r);
-vector<int> merge_vector(vector<int>& x, vector<int>& y);
+void MergeSort(vector<int>& vec);
+vector<int> MergeSortProcess(vector<int>& vec, int l, int r);
+vector<int> Merge(vector<int>& x, vector<int>& y);
 
-void merge_sort(vector<int>& vec) {
+void MergeSort(vector<int>& vec) {
 	if (&vec == nullptr || vec.size() < 2) {
 		return;
 	}
-	vector<int> res = process(vec, 0, vec.size() - 1);
+	vector<int> res = MergeSortProcess(vec, 0, vec.size() - 1);
 	for (int i = 0; i < res.size(); i++) {
 		vec[i] = res[i];
 	}
 }
 
-vector<int> process(vector<int>& vec, int l, int r) {
+vector<int> MergeSortProcess(vector<int>& vec, int l, int r) {
 	if (&vec == nullptr || vec.size()==0) {
 		return {};
 	}
@@ -22,14 +22,14 @@ vector<int> process(vector<int>& vec, int l, int r) {
 		return {vec[l]};
 	}
 	int mid = l + ((r - l) >> 1);
-	vector<int> arr1 = process(vec, l, mid);
-	vector<int> arr2 = process(vec, mid + 1, r);
-	vector<int> res = merge_vector(arr1, arr2);
+	vector<int> arr1 = MergeSortProcess(vec, l, mid);
+	vector<int> arr2 = MergeSortProcess(vec, mid + 1, r);
+	vector<int> res = Merge(arr1, arr2);
 	return res;
 }
 
 // x, y are sortted
-vector<int> merge_vector(vector<int>& x, vector<int>& y) {
+vector<int> Merge(vector<int>& x, vector<int>& y) {
 	vector<int> res(x.size() + y.size());
 	int p1 = 0;
 	int p2 = 0;

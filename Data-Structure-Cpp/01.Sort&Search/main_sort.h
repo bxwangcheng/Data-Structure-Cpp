@@ -39,7 +39,7 @@ void test_sort(void) {
 	//Find(vec[0][0], vec);
 
 	vector<int> vec = { 1,1,1,1,2,2,2,3,3,3,4,4 };
-	print_to_console_ln(rightmost(vec, 3));
-	print_to_console_ln(leftmost(vec, 3));
+	Println(Rightmost(vec, 3));
+	Println(Leftmost(vec, 3));
 
 }

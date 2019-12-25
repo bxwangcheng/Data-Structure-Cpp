@@ -149,13 +149,13 @@
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\main_advanced.h">
       <Filter>Header Files\05.Advanced</Filter>
     </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Edge.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Node.h">
-      <Filter>Header Files\04.Graph</Filter>
-    </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Graph.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphEdge.h">
+      <Filter>Header Files\04.Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphNode.h">
       <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
   </ItemGroup>

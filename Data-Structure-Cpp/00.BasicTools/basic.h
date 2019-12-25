@@ -6,7 +6,7 @@ using std::string;
 using std::wstring;
 using std::to_string;
 
-void print_to_console(string str) {
+void Print(string str) {
 	const char* p = (char*)str.c_str();
 	size_t size = strlen(p) + 1;
 	wchar_t* w_p = new wchar_t[size];
@@ -15,7 +15,7 @@ void print_to_console(string str) {
 	OutputDebugString(w_p);
 }
 
-void print_to_console(int x) {
+void Print(int x) {
 	string str = to_string(x);
 	const char* p = (char*)str.c_str();
 	size_t size = strlen(p) + 1;
@@ -25,7 +25,7 @@ void print_to_console(int x) {
 	OutputDebugString(w_p);
 }
 
-void print_to_console(double x) {
+void Print(double x) {
 	string str = to_string(x);
 	const char* p = (char*)str.c_str();
 	size_t size = strlen(p) + 1;
@@ -35,7 +35,25 @@ void print_to_console(double x) {
 	OutputDebugString(w_p);
 }
 
-void print_to_console_ln(string str) {
+void Print(bool x) {
+	if (x == true) {
+		OutputDebugString(L"true");
+	}
+	else {
+		OutputDebugString(L"false");
+	}
+}
+
+void Println(bool x) {
+	if (x == true) {
+		OutputDebugString(L"true\n");
+	}
+	else {
+		OutputDebugString(L"false\n");
+	}
+}
+
+void Println(string str) {
 	str += "\n";
 	const char* p = (char*)str.c_str();
 	size_t size = strlen(p) + 1;
@@ -45,7 +63,7 @@ void print_to_console_ln(string str) {
 	OutputDebugString(w_p);
 }
 
-void print_to_console_ln() {
+void Println() {
 	string str = "\n";
 	const char* p = (char*)str.c_str();
 	size_t size = strlen(p) + 1;
@@ -55,7 +73,17 @@ void print_to_console_ln() {
 	OutputDebugString(w_p);
 }
 
-void print_to_console_ln(int x) {
+void Print() {
+	string str = " ";
+	const char* p = (char*)str.c_str();
+	size_t size = strlen(p) + 1;
+	wchar_t* w_p = new wchar_t[size];
+	size_t outSize;
+	mbstowcs_s(&outSize, w_p, size, p, size - 1);
+	OutputDebugString(w_p);
+}
+
+void Println(int x) {
 	string str = to_string(x);
 	str += "\n";
 	const char* p = (char*)str.c_str();
@@ -66,7 +94,7 @@ void print_to_console_ln(int x) {
 	OutputDebugString(w_p);
 }
 
-void print_to_console_ln(double x) {
+void Println(double x) {
 	string str = to_string(x);
 	str += "\n";
 	const char* p = (char*)str.c_str();

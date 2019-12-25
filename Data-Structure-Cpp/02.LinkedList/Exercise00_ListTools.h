@@ -5,97 +5,97 @@ class ListNode {
 
 public:
 	ListNode(int value) :
-		value(value),
-		next(nullptr)
+		value_(value),
+		next_(nullptr)
 	{}
 
 public:
-	int value;
-	ListNode* next;
+	int value_;
+	ListNode* next_;
 };
 
 class BinaryListNode {
 
 public:
 	BinaryListNode(int value) : 
-		value(value),
-		last(nullptr),
-		next(nullptr)
+		value_(value),
+		last_(nullptr),
+		next_(nullptr)
 	{}
 
 public:
-	int value;
-	BinaryListNode* last;
-	BinaryListNode* next;
+	int value_;
+	BinaryListNode* last_;
+	BinaryListNode* next_;
 };
 
-void print_linked_list(ListNode* head) {
+void Print(ListNode* head) {
 	ListNode* cur = head;
 	string output;
 	while (cur != nullptr) {
-		output += to_string(cur->value) + "->";
-		cur = cur->next;
+		output += to_string(cur->value_) + "->";
+		cur = cur->next_;
 	}
 	output += "null";
-	print_to_console_ln(output);
+	Println(output);
 }
 
-void print_linked_list(BinaryListNode* head) {
+void Print(BinaryListNode* head) {
 	BinaryListNode* cur = head;
 	string output;
-	while (cur->next != nullptr) {
-		output += to_string(cur->value) + "->";
-		cur = cur->next;
+	while (cur->next_ != nullptr) {
+		output += to_string(cur->value_) + "->";
+		cur = cur->next_;
 	}
-	output += to_string(cur->value) + "->null";
-	print_to_console_ln(output);
+	output += to_string(cur->value_) + "->null";
+	Println(output);
 	output = "";
 	while (cur != nullptr) {
-		output += to_string(cur->value) + "->";
-		cur = cur->last;
+		output += to_string(cur->value_) + "->";
+		cur = cur->last_;
 	}
 	output += "null";
-	print_to_console_ln(output);
+	Println(output);
 }
 
-ListNode* generate_random_list(int max_size, int max_value) {
+ListNode* GenerateLinkedList(int max_size, int max_value) {
 	srand((unsigned)time(nullptr));
 	int size = (rand() % (max_size + 1));
 	ListNode* head = new ListNode((rand() % (2 * max_size + 1)) - max_size);
 	ListNode* cur = head;
 	while (size > 1) {
 		int value = (rand() % (2 * max_size + 1)) - max_size;
-		cur->next = new ListNode(value);
-		cur = cur->next;
+		cur->next_ = new ListNode(value);
+		cur = cur->next_;
 		size--;
 	}
 	return head;
 }
 
-BinaryListNode* generate_random_binary_list(int max_size, int max_value) {
+BinaryListNode* GenerateBinaryLinkedList(int max_size, int max_value) {
 	srand((unsigned)time(nullptr));
 	int size = (rand() % (max_size + 1));
 	BinaryListNode* head = new BinaryListNode((rand() % (2 * max_size + 1)) - max_size);
 	BinaryListNode* cur = head;
 	while (size > 1) {
 		int value = (rand() % (2 * max_size + 1)) - max_size;
-		cur->next = new BinaryListNode(value);
-		cur->next->last = cur;
-		cur = cur->next;
+		cur->next_ = new BinaryListNode(value);
+		cur->next_->last_ = cur;
+		cur = cur->next_;
 		size--;
 	}
 	return head;
 }
 
-ListNode* generate_list(vector<int> arr) {
+ListNode* ConvertToLinkedList(vector<int> arr) {
 	if (arr.size() < 1 || &arr == nullptr) {
 		return nullptr;
 	}
 	ListNode* head = new ListNode(arr[0]);
 	ListNode* cur = head;
 	for (int i = 1; i < arr.size(); i++) {
-		cur->next = new ListNode(arr[i]);
-		cur = cur->next;
+		cur->next_ = new ListNode(arr[i]);
+		cur = cur->next_;
 	}
 	return head;
 }
