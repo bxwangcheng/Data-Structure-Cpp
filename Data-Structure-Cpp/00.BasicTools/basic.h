@@ -1,10 +1,27 @@
 #pragma once
 #include <string>
 #include <Windows.h>
+#include <map>
+#include <set>
+#include <unordered_map>
+#include <unordered_set>
+#include <queue>
+#include <stack>
+#include <algorithm>
+#include <math.h>
 
+using std::priority_queue;
+using std::queue;
+using std::stack;
+using std::map;
+using std::set;
+using std::unordered_map;
+using std::unordered_set;
+using std::pair;
 using std::string;
 using std::wstring;
 using std::to_string;
+using std::max;
 
 void Print(string str) {
 	const char* p = (char*)str.c_str();

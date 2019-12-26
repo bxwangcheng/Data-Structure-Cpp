@@ -1,15 +1,5 @@
 #pragma once
 #include "../00.BasicTools/basic.h"
-#include <algorithm>
-#include <math.h>
-#include <stack>
-#include <queue>
-
-using std::to_string;
-using std::max;
-using std::stack;
-using std::queue;
-
 
 class TreeNode {
 

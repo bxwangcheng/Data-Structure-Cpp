@@ -1,20 +1,30 @@
 #pragma once
 using namespace std;
 
-class GraphNode;
+struct GraphNode;
 
-class GraphEdge
+struct GraphEdge
 {
+	int weight_;
+	GraphNode* from_;
+	GraphNode* to_;
 
-public:
 	GraphEdge(int weight, GraphNode* from, GraphNode* to) :
 		weight_(weight),
 		from_(from),
 		to_(to)
 	{}
-
-public:
-	int weight_;
-	GraphNode* from_;
-	GraphNode* to_;
 };
+
+struct WeightAscend {
+	bool operator()(const GraphEdge* a, const GraphEdge* b) const {
+		return a->weight_ < b->weight_;	//小到大
+	}
+};
+
+struct WeightDescend {
+	bool operator()(const GraphEdge* a, const GraphEdge* b) const {
+		return a->weight_ > b->weight_;	//大到小
+	}
+};
+

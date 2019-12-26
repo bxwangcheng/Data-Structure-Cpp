@@ -1,8 +1,4 @@
 #include "Exercise00_ListTools.h"
-#include <unordered_map>
-
-using std::unordered_map;
-using std::pair;
 /*
 【复制含有随机指针节点的链表】
 	rand_指针是单链表节点结构中新增的指针
