@@ -21,7 +21,7 @@ C++ Implement of Basic Data Structure and Algorithm
 
 - [X] Partition
 
-- [ ] 堆排序
+- [X] 堆排序
 
 - [ ] 桶排序
 
