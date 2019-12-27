@@ -53,11 +53,12 @@ void Print(vector<vector<int>>& x) {
 	Println(output);
 }
 
-void Swap(vector<int>& x, int a, int b) {
+template<class T>
+void Swap(vector<T>& x, int a, int b) {
 	if (a == b) {
 		return;
 	}
-	int tmp = x[a];
+	T tmp = x[a];
 	x[a] = x[b];
 	x[b] = tmp;
 }

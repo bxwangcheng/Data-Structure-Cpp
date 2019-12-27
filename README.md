@@ -79,7 +79,7 @@ C++ Implement of Basic Data Structure and Algorithm
 
 - [X] Kruskal最小生成树
 
-- [ ] Prim最小生成树
+- [X] Prim最小生成树
 
 - [ ] 单源最短路径Dijkstra
 

@@ -9,9 +9,9 @@ unordered_set<GraphEdge*> Kruskal(Graph* graph) {
 	for (auto it = graph->edges_.begin(); it != graph->edges_.end(); it++) {
 		edges.push(*it);
 	}
-	vector<GraphNode*> nodes;
+	unordered_set<GraphNode*> nodes;
 	for (auto it = graph->nodes_.begin(); it != graph->nodes_.end(); it++) {
-		nodes.push_back(it->second);
+		nodes.insert(it->second);
 	}
 	UnionFind* unionfind = new UnionFind(nodes);
 	unordered_set<GraphEdge*> mst;
