@@ -26,16 +26,27 @@ void unionfind_main(void) {
 
 }
 
-void kmp_main(void) {
-
+void test_kmp(void) {
+	auto res = getNextArray("aabsaataabsaakaabsaataabsaaax");
 }
 
 void manacher_main(void) {
 
 }
 
-void sliding_main(void) {
-
+void test_slidingWindow(void) {
+	vector<int> arr = { 5,3,2,4,6,5,3 };
+	SlideWindow* window = new SlideWindow(arr);
+	window->MoveRightSlider();
+	window->MoveRightSlider();
+	window->MoveRightSlider();
+	//window->MoveRightSlider();
+	//window->MoveRightSlider();
+	//window->MoveRightSlider();
+	//window->MoveRightSlider();
+	window->MoveLeftSlider();
+	window->MoveLeftSlider();
+	Println(window->Max());
 }
 
 void monostack_main(void) {

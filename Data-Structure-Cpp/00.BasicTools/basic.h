@@ -9,7 +9,9 @@
 #include <stack>
 #include <algorithm>
 #include <math.h>
+#include <deque>
 
+using std::deque;
 using std::priority_queue;
 using std::queue;
 using std::stack;

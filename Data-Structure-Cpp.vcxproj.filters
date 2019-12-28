@@ -158,10 +158,18 @@
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphNode.h">
       <Filter>Header Files\04.Graph</Filter>
     </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise00_AdvancedTools.h">
+      <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data-Structure-Cpp\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

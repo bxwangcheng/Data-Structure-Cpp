@@ -51,11 +51,11 @@ C++ Implement of Basic Data Structure and Algorithm
 
 - [ ] 最大宽度
 
+- [X] 判断完全二叉树
+
 - [X] 最大高度【树型DP】
 
 - [X] 判断搜索二叉树【树型DP】
-
-- [X] 判断完全二叉树
 
 - [X] 判断平衡二叉树【树型DP】
 
@@ -81,17 +81,17 @@ C++ Implement of Basic Data Structure and Algorithm
 
 - [X] Prim最小生成树
 
-- [ ] 单源最短路径Dijkstra
+- [X] Dijkstra单源最短路径
 
 ##### 05.高级
 
 - [X] 前缀树
 
-- [ ] KMP算法
+- [X] KMP最长字串
 
-- [ ] Manacher算法
+- [ ] Manacher最长回文子串
 
-- [ ] 滑动窗口
+- [X] 滑动窗口
 
 - [ ] 单调栈
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "Exercise00_GraphTools.h"
+#include "../05.Advanced/Exercise02_UnionFind.h"
 
 unordered_set<GraphEdge*> Kruskal(Graph* graph) {
 	if (graph == nullptr) {

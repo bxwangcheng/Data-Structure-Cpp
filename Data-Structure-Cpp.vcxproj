@@ -122,6 +122,7 @@
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Graph.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\main_graph.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphNode.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise00_AdvancedTools.h" />
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise01_Trie.h" />
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise02_UnionFind.h" />
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise03_KMP.h" />
@@ -133,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Data-Structure-Cpp\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

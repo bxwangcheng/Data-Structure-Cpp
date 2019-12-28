@@ -6,11 +6,13 @@
 #include "05.Advanced/main_advanced.h"
 
 int main(void) {
-	test_sort();
+	//test_sort();
 	//test_list();
 	//test_tree();
 	//test_graph();
 	//test_trie();
+	//test_kmp();
+	test_slidingWindow();
 	
 	//for(int i =0;i<200000;i++){
 	//	srand((unsigned)time(nullptr));
