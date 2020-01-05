@@ -4,6 +4,8 @@
 #include "03.BinaryTree/main_tree.h"
 #include "04.Graph/main_graph.h"
 #include "05.Advanced/main_advanced.h"
+#include "06.Offer/main_offer.h"
+#include "07.Nowcoder/main_nowcoder.h"
 
 int main(void) {
 	//test_sort();
@@ -12,7 +14,11 @@ int main(void) {
 	//test_graph();
 	//test_trie();
 	//test_kmp();
-	test_slidingWindow();
+	//test_slidingWindow();
+	//test_offer();
+	//test_monostack();
+	//test_morris();
+	//test_manacher();
 	
 	//for(int i =0;i<200000;i++){
 	//	srand((unsigned)time(nullptr));
@@ -26,4 +32,6 @@ int main(void) {
 	//print_vector(a);
 	//bubble_sort(a);
 	//print_vector(a);
+
+	test_nowcoder();
 }

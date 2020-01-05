@@ -22,6 +22,7 @@ using std::unordered_set;
 using std::pair;
 using std::string;
 using std::wstring;
+using std::vector;
 using std::to_string;
 using std::max;
 
@@ -54,14 +55,15 @@ void Print(double x) {
 	OutputDebugString(w_p);
 }
 
-void Print(bool x) {
-	if (x == true) {
-		OutputDebugString(L"true");
-	}
-	else {
-		OutputDebugString(L"false");
-	}
-}
+//template<class T>
+//void Print(T x) {
+//	if (x == true) {
+//		OutputDebugString(L"true");
+//	}
+//	else {
+//		OutputDebugString(L"false");
+//	}
+//}
 
 void Println(bool x) {
 	if (x == true) {

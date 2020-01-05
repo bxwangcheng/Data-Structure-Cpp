@@ -7,7 +7,7 @@ int BinarySearch(vector<int>& x, int value) {
 	int l = 0;
 	int r = x.size()-1;
 	while (l < r) {
-		int mid = l + ((r - l) >> 2);
+		int mid = l + ((r - l) >> 1);
 		if (x[mid] < value) {
 			l = mid + 1;
 		}

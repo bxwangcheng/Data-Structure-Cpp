@@ -30,8 +30,10 @@ void test_kmp(void) {
 	auto res = getNextArray("aabsaataabsaakaabsaataabsaaax");
 }
 
-void manacher_main(void) {
-
+void test_manacher(void) {
+	//Println(Preprocess("1221"));
+	//int res = MaxPalindrome("");
+	int res = Manacher("123245");
 }
 
 void test_slidingWindow(void) {
@@ -49,10 +51,20 @@ void test_slidingWindow(void) {
 	Println(window->Max());
 }
 
-void monostack_main(void) {
-
+void test_monostack(void) {
+	vector<double> test = { 3.2,2.1,1.89,4.65,0.22,5.87,6 };
+	//auto res = FirstSmallerPosition(test);
+	auto res = FirstBiggerPosition(test);
+	
 }
 
-void morris_main(void) {
-
+void test_morris(void) {
+	TreeNode* root = new TreeNode(1);
+	root->left_ = new TreeNode(2);
+	root->right_ = new TreeNode(3);
+	root->left_->left_ = new TreeNode(4);
+	root->left_->right_ = new TreeNode(5);
+	root->right_->left_ = new TreeNode(6);
+	root->right_->right_ = new TreeNode(7);
+	MorrisPos(root);
 }

@@ -31,6 +31,12 @@
     <Filter Include="Header Files\05.Advanced">
       <UniqueIdentifier>{31ad7fb9-cad4-4410-b0f5-41275eb87943}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\06.剑指Offer">
+      <UniqueIdentifier>{07cf26b5-9558-4735-8bdf-10e249518419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\07.牛客算法">
+      <UniqueIdentifier>{70e111ff-e199-48c6-aa34-8afa0740a55d}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
       <Extensions>qrc;*</Extensions>
@@ -160,6 +166,195 @@
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise00_AdvancedTools.h">
       <Filter>Header Files\05.Advanced</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise02.h">
+      <Filter>Header Files\06.剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\06.Offer\main_offer.h">
+      <Filter>Header Files\06.剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise00_OfferTools.h">
+      <Filter>Header Files\06.剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise03.h">
+      <Filter>Header Files\06.剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise04.h">
+      <Filter>Header Files\06.剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise00_NowcoderTools.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise01.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise02.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise03.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise04.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise05.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise06.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise07.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise08.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise09.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise10.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise11.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise12.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise13.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise14.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise15.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise16.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise17.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise18.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise19.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise20.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise21.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise22.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise23.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise24.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise25.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise26.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise27.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise28.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise29.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise30.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise31.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise32.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise33.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise34.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise35.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise36.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise37.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise38.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise39.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise40.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise41.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise42.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise43.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise44.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise45.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise46.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise47.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise48.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise49.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise50.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise51.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise52.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise53.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise54.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise55.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise56.h">
+      <Filter>Header Files\07.牛客算法</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\main_nowcoder.h">
+      <Filter>Header Files\07.牛客算法</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

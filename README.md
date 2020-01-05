@@ -89,12 +89,12 @@ C++ Implement of Basic Data Structure and Algorithm
 
 - [X] KMP最长字串
 
-- [ ] Manacher最长回文子串
+- [X] Manacher最长回文子串
 
 - [X] 滑动窗口
 
-- [ ] 单调栈
+- [X] 单调栈
 
-- [ ] Morris遍历
+- [X] Morris遍历
 
 - [ ] 暴力递归与动态规划
