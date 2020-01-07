@@ -1,11 +1,12 @@
 #include "00.BasicTools/basic.h"
-#include "01.Sort&Search/main_sort.h"
-#include "02.LinkedList/main_list.h"
-#include "03.BinaryTree/main_tree.h"
-#include "04.Graph/main_graph.h"
-#include "05.Advanced/main_advanced.h"
-#include "06.Offer/main_offer.h"
-#include "07.Nowcoder/main_nowcoder.h"
+#include "01.DataStructure&Algorithm/01.Sort&Search/main_sort.h"
+#include "01.DataStructure&Algorithm/02.LinkedList/main_list.h"
+#include "01.DataStructure&Algorithm/03.BinaryTree/main_tree.h"
+#include "01.DataStructure&Algorithm/04.Graph/main_graph.h"
+#include "01.DataStructure&Algorithm/05.Advanced/main_advanced.h"
+#include "02.Nowcoder_Intermediate/main_nowcoder_intermediate.h"
+#include "03.Nowcoder_Advanced/main_nowcoder_advanced.h"
+#include "04.Offer/main_offer.h"
 
 
 // wc version

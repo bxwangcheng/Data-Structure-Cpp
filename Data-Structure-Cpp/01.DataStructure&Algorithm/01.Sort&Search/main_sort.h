@@ -8,32 +8,32 @@
 #include "Exercise07_BinarySearch.h"
 
 void test_sort(void) {
-	//int test_times = 200000;
-	//int max_size = 20;
-	//int max_value = 100;
-	//bool res = true;
-	//for (int i = 0; i < test_times; i++) {
-	//	vector<int> vec = generate_random_vector(max_size, max_value);
-	//	vector<int> dup(vec);
-	//	comparator(dup);
-	//	//selection_sort(vec);
-	//	//bubble_sort(vec);
-	//	//insertion_sort(vec);
-	//	//merge_sort(vec);
-	//	quick_sort(vec);
-	//	if (!equal(vec, dup)) {
-	//		res = false;
-	//		break;
-	//	}
-	//}
-	//res ? print_to_console_ln("success!") : print_to_console_ln("fail!");
+	int test_times = 200000;
+	int max_size = 20;
+	int max_value = 100;
+	bool res = true;
+	for (int i = 0; i < test_times; i++) {
+		vector<int> vec = GenerateArray(max_size, max_value);
+		vector<int> dup(vec);
+		Comparator(dup);
+		//selection_sort(vec);
+		//bubble_sort(vec);
+		//insertion_sort(vec);
+		//merge_sort(vec);
+		QuickSort(vec);
+		if (!Equal(vec, dup)) {
+			res = false;
+			break;
+		}
+	}
+	res ? Println("success!") : Println("fail!");
 
 
-	vector<int> vec = { 3,2,5,1,7,4,9 };
-	Print(vec);
-	HeapSort(vec);
-	Println();
-	Print(vec);
+	//vector<int> vec = { 3,2,5,1,7,4,9 };
+	//Print(vec);
+	//HeapSort(vec);
+	//Println();
+	//Print(vec);
 
 	//auto vec = generate_random_matrix(10, 100);
 	//print_matrix(vec);

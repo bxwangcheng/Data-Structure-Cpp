@@ -1,6 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
@@ -11,35 +19,50 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
-    <Keyword>QtVS_v301</Keyword>
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{DA0BFCF8-5919-45BC-B79F-845046B4E8D0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DataStructureCpp</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Data-Structure-Cpp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
-    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
-  </PropertyGroup>
-  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
-    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
-  </Target>
-  <ImportGroup Label="ExtensionSettings" />
-  <ImportGroup Label="Shared" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
@@ -47,164 +70,196 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
-    <Import Project="$(QtMsBuild)\qt_defaults.props" />
-  </ImportGroup>
-  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <QtInstall>msvc2017_64</QtInstall>
-    <QtModules>
-    </QtModules>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
-  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <QtInstall>msvc2017_64</QtInstall>
-    <QtModules>core;gui;widgets</QtModules>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
   </PropertyGroup>
-  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
-    <Import Project="$(QtMsBuild)\qt.props" />
-  </ImportGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <Optimization>Disabled</Optimization>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <MultiProcessorCompilation>true</MultiProcessorCompilation>
-      <DebugInformationFormat />
-      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
-      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Data-Structure-Cpp\00.BasicTools\basic.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise00_SortTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise01_SelectionSort.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise02_BubbleSort.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise03_InsertionSort.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise04_HeapSort.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise05_MergeSort.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise06_QuickSort.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\Exercise07_BinarySearch.h" />
-    <ClInclude Include="Data-Structure-Cpp\01.Sort&amp;Search\main_sort.h" />
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise00_ListTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise01_ReverseLinkedList.h" />
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise02_ListPartition.h" />
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise03_ListDuplicate.h" />
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\Exercise04_DoublePointer.h" />
-    <ClInclude Include="Data-Structure-Cpp\02.LinkedList\main_list.h" />
-    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise00_TreeTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise01_RecurTraversal.h" />
-    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise02_UnrecurTraversal.h" />
-    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\Exercise03_TreeDP.h" />
-    <ClInclude Include="Data-Structure-Cpp\03.BinaryTree\main_tree.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphEdge.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise01_BFS.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise02_DFS.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise03_TopologySort.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise04_Kruskal.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise05_Prim.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise06_Dijkstra.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_Graph.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\main_graph.h" />
-    <ClInclude Include="Data-Structure-Cpp\04.Graph\Exercise00_GraphNode.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise00_AdvancedTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise01_Trie.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise02_UnionFind.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise03_KMP.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise04_Manacher.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise05_SlidingWindow.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise06_MonotonousStack.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\Exercise07_MorrisTraversal.h" />
-    <ClInclude Include="Data-Structure-Cpp\05.Advanced\main_advanced.h" />
-    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise00_OfferTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise02.h" />
-    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise03.h" />
-    <ClInclude Include="Data-Structure-Cpp\06.Offer\Exercise04.h" />
-    <ClInclude Include="Data-Structure-Cpp\06.Offer\main_offer.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise00_NowcoderTools.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise01.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise02.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise03.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise04.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise05.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise06.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise07.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise08.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise09.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise10.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise11.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise12.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise13.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise14.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise15.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise16.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise17.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise18.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise19.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise20.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise21.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise22.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise23.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise24.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise25.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise26.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise27.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise28.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise29.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise30.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise31.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise32.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise33.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise34.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise35.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise36.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise37.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise38.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise39.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise40.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise41.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise42.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise43.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise44.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise45.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise46.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise47.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise48.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise49.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise50.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise51.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise52.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise53.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise54.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise55.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\Exercise56.h" />
-    <ClInclude Include="Data-Structure-Cpp\07.Nowcoder\main_nowcoder.h" />
+    <ClCompile Include="Data-Structure-Cpp\main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Data-Structure-Cpp\main.cpp" />
+    <ClInclude Include="Data-Structure-Cpp\00.BasicTools\basic.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise00_SortTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise01_SelectionSort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise02_BubbleSort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise03_InsertionSort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise04_HeapSort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise05_MergeSort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise06_QuickSort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\Exercise07_BinarySearch.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\01.Sort&amp;Search\main_sort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\02.LinkedList\Exercise00_ListTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\02.LinkedList\Exercise01_ReverseLinkedList.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\02.LinkedList\Exercise02_ListPartition.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\02.LinkedList\Exercise03_ListDuplicate.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\02.LinkedList\Exercise04_DoublePointer.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\02.LinkedList\main_list.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\03.BinaryTree\Exercise00_TreeTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\03.BinaryTree\Exercise01_RecurTraversal.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\03.BinaryTree\Exercise02_UnrecurTraversal.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\03.BinaryTree\Exercise03_TreeDP.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\03.BinaryTree\main_tree.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise00_Graph.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise00_GraphEdge.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise00_GraphNode.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise00_GraphTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise01_BFS.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise02_DFS.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise03_TopologySort.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise04_Kruskal.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise05_Prim.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\Exercise06_Dijkstra.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\04.Graph\main_graph.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise00_AdvancedTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise01_Trie.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise02_UnionFind.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise03_KMP.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise04_Manacher.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise05_SlidingWindow.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise06_MonotonousStack.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise07_MorrisTraversal.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\main_advanced.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise00_NowcoderTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise01.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise02.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise03.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise04.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise05.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise06.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise07.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise08.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise09.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise10.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise11.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise12.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise13.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise14.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise15.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise16.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise17.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise18.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise19.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise20.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise21.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise22.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise23.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise24.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise25.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise26.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise27.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise28.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise29.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise30.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise31.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise32.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise33.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise34.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise35.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise36.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise37.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise38.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise39.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise40.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise41.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise42.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise43.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise44.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise45.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise46.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise47.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise48.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise49.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise50.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise51.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise52.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise53.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise54.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise55.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise56.h" />
+    <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\main_nowcoder_intermediate.h" />
+    <ClInclude Include="Data-Structure-Cpp\03.Nowcoder_Advanced\main_nowcoder_advanced.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Offer\Exercise00_OfferTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Offer\Exercise02.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Offer\Exercise03.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Offer\Exercise04.h" />
+    <ClInclude Include="Data-Structure-Cpp\04.Offer\main_offer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
-    <Import Project="$(QtMsBuild)\qt.targets" />
-  </ImportGroup>
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
 </Project>

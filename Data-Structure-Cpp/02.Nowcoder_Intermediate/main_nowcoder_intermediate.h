@@ -55,19 +55,15 @@
 #include "Exercise54.h"
 #include "Exercise55.h"
 #include "Exercise56.h"
+#include "../01.DataStructure&Algorithm/01.Sort&Search/Exercise00_SortTools.h"
 
 void test_nowcoder(void) {
-	vector<int> arr = { 3,7,9,12,32 };
-	int res = LeftmostBigger(arr, 0, arr.size() - 1, 2);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 3);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 4);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 5);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 6);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 7);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 8);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 9);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 10);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 11);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 12);
-	res = LeftmostBigger(arr, 0, arr.size() - 1, 13);
+	//if (TestExercise01()) {
+	//	Println("success!");
+	//}
+	//else {
+	//	Println("failed!");
+	//}
+
+	TestExercise10();
 }

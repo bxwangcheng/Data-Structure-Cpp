@@ -1,5 +1,5 @@
 #pragma once
-#include "../00.BasicTools/basic.h"
+#include "../../00.BasicTools/basic.h"
 #include "Exercise01_Trie.h"
 #include "Exercise02_UnionFind.h"
 #include "Exercise03_KMP.h"

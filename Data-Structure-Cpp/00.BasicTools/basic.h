@@ -32,7 +32,7 @@ void Print(string str) {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 void Print(int x) {
@@ -42,7 +42,7 @@ void Print(int x) {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 void Print(double x) {
@@ -52,7 +52,7 @@ void Print(double x) {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 //template<class T>
@@ -65,14 +65,14 @@ void Print(double x) {
 //	}
 //}
 
-void Println(bool x) {
-	if (x == true) {
-		OutputDebugString(L"true\n");
-	}
-	else {
-		OutputDebugString(L"false\n");
-	}
-}
+//void Println(bool x) {
+//	if (x == true) {
+//		OutputDebugString(L"true\n");
+//	}
+//	else {
+//		OutputDebugString(L"false\n");
+//	}
+//}
 
 void Println(string str) {
 	str += "\n";
@@ -81,7 +81,7 @@ void Println(string str) {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 void Println() {
@@ -91,7 +91,7 @@ void Println() {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 void Print() {
@@ -101,7 +101,7 @@ void Print() {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 void Println(int x) {
@@ -112,7 +112,7 @@ void Println(int x) {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }
 
 void Println(double x) {
@@ -123,5 +123,5 @@ void Println(double x) {
 	wchar_t* w_p = new wchar_t[size];
 	size_t outSize;
 	mbstowcs_s(&outSize, w_p, size, p, size - 1);
-	OutputDebugString(w_p);
+	OutputDebugStringA(p);
 }

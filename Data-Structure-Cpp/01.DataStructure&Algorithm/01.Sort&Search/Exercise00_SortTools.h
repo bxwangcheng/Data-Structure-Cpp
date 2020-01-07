@@ -2,7 +2,7 @@
 #include <vector>
 #include <algorithm> 
 #include <time.h>
-#include "../00.BasicTools/basic.h"
+#include "../../00.BasicTools/basic.h"
 
 using std::vector;
 using std::string;
@@ -14,7 +14,18 @@ vector<int> GenerateArray(int max_size, int max_value) {
 	vector<int> res;
 	int size = (rand() % (max_size + 1));
 	for (int i = 0; i < size; i++) {
-		int value = (rand() % (2 * max_size + 1)) - max_size;
+		int value = (rand() % (2 * max_value + 1)) - max_value;
+		res.push_back(value);
+	}
+	return res;
+}
+
+vector<int> GeneratePositiveArray(int max_size, int max_value) {
+	srand((unsigned)time(nullptr));
+	vector<int> res;
+	int size = (rand() % (max_size + 1));
+	for (int i = 0; i < size; i++) {
+		int value = (rand() % (max_value + 1)) + 1;
 		res.push_back(value);
 	}
 	return res;
