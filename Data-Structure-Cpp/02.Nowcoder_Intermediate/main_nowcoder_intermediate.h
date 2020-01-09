@@ -58,12 +58,12 @@
 #include "../01.DataStructure&Algorithm/01.Sort&Search/Exercise00_SortTools.h"
 
 void test_nowcoder(void) {
-	//if (TestExercise01()) {
+	//if (TestExercise13()) {
 	//	Println("success!");
 	//}
 	//else {
 	//	Println("failed!");
 	//}
 
-	TestExercise10();
+	TestExercise17();
 }

@@ -23,84 +23,76 @@ using std::pair;
 using std::string;
 using std::wstring;
 using std::vector;
+using std::ostringstream;
 using std::to_string;
 using std::max;
+using std::min;
+
+void Print();
+void Print(string str);
+void Print(int x);
+void Print(double x);
+void Print(const vector<int>& x);
+void Print(const vector<vector<int>>& x);
+void Println();
+void Println(string str);
+void Println(int x);
+void Println(double x);
 
 void Print(string str) {
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
 void Print(int x) {
 	string str = to_string(x);
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
 void Print(double x) {
 	string str = to_string(x);
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
-//template<class T>
-//void Print(T x) {
-//	if (x == true) {
-//		OutputDebugString(L"true");
-//	}
-//	else {
-//		OutputDebugString(L"false");
-//	}
-//}
+void Print(const vector<int>& x) {
+	string output = "";
+	for (int i = 0; i < x.size(); i++) {
+		output += to_string(x[i]) + " ";
+	}
+	Println(output);
+}
 
-//void Println(bool x) {
-//	if (x == true) {
-//		OutputDebugString(L"true\n");
-//	}
-//	else {
-//		OutputDebugString(L"false\n");
-//	}
-//}
+void Print(const vector<vector<int>>& x) {
+	string output = "";
+	int ROW = x.size();
+	int COL = x[0].size();
+	for (int row = 0; row < ROW; row++) {
+		string row_str = "";
+		for (int col = 0; col < COL; col++) {
+			row_str += to_string(x[row][col]) + "\t\t";
+		}
+		output += row_str + "\n";
+	}
+	Println(output);
+}
 
 void Println(string str) {
 	str += "\n";
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
 void Println() {
 	string str = "\n";
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
 void Print() {
 	string str = " ";
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
@@ -108,10 +100,6 @@ void Println(int x) {
 	string str = to_string(x);
 	str += "\n";
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }
 
@@ -119,9 +107,5 @@ void Println(double x) {
 	string str = to_string(x);
 	str += "\n";
 	const char* p = (char*)str.c_str();
-	size_t size = strlen(p) + 1;
-	wchar_t* w_p = new wchar_t[size];
-	size_t outSize;
-	mbstowcs_s(&outSize, w_p, size, p, size - 1);
 	OutputDebugStringA(p);
 }

@@ -44,26 +44,6 @@ vector<vector<int>> GenerateMatrix(int max_size, int max_value) {
 	return res;
 }
 
-void Print(vector<int>& x) {
-	string output = "";
-	for (int i = 0; i < x.size(); i++) {
-		output += to_string(x[i]) + " ";
-	}
-	Println(output);
-}
-
-void Print(vector<vector<int>>& x) {
-	string output = "";
-	for (int j = 0; j < x.size(); j++) {
-		string row = "";
-		for (int i = 0; i < x.size(); i++) {
-			row += to_string(x[i][j]) + "\t\t";
-		}
-		output += row + "\n";
-	}
-	Println(output);
-}
-
 template<class T>
 void Swap(vector<T>& x, int a, int b) {
 	if (a == b) {

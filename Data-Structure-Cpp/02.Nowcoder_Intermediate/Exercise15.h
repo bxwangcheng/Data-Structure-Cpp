@@ -12,3 +12,46 @@
 移动了3轮，每个机器上的物品相等，所以返回3
 例如[2,2,3]表示有3个机器，每个机器上分别有2、2、3个物品，
 这些物品不管怎么移动，都不能使三个机器上物品数量相等，返回-1*/
+
+vector<int> MovePackagesPreSum(const vector<int>& x);
+int MovePackages(const vector<int>& x) {
+	if (x.size() < 2) {
+		return 0;
+	}
+	int sum = 0;
+	for (int i = 0; i < x.size(); i++) {
+		sum += x[i];
+	}
+	if (sum % x.size()) {
+		return -1;
+	}
+	int avg = sum / x.size();
+	vector<int> ops(x.size(), 0);
+	int max_ops = INT_MIN;
+	vector<int> pre_sum = MovePackagesPreSum(x);
+	for (int i = 0; i < x.size(); i++) {
+		int left_need = i == 0 ? 0 : i * avg - pre_sum[i - 1];
+		int right_need = i == x.size() - 1 ? 0 : (x.size() - 1 - i) * avg - pre_sum[x.size() - 1] + pre_sum[i];
+		if (left_need && right_need) {
+			ops[i] = left_need + right_need;
+		}
+		else {
+			ops[i] = max(abs(left_need), abs(right_need));
+		}
+		max_ops = max(max_ops, ops[i]);
+	}
+	return max_ops;
+}
+
+vector<int> MovePackagesPreSum(const vector<int>& x) {
+	vector<int> pre_sum(x.size(), 0);
+	pre_sum[0] = x[0];
+	for (int i = 1; i < x.size(); i++) {
+		pre_sum[i] = pre_sum[i - 1] + x[i];
+	}
+	return pre_sum;
+}
+
+void TestExercise15() {
+	Println(MovePackages({ 4,6,2,0 }));
+}
