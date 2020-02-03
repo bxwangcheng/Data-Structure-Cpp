@@ -12,8 +12,8 @@ void Bfs(GraphNode* node) {
 	while (!q.empty()) {
 		GraphNode* cur = q.front();
 		q.pop();
-		Print(cur->value_+" ");
-		for (auto it = cur->nexts_.begin(); it != cur->nexts_.end(); it++) {
+		Print(cur->value+" ");
+		for (auto it = cur->nexts.begin(); it != cur->nexts.end(); it++) {
 			GraphNode* cur = *it;
 			if (visited.find(cur) == visited.end()) {
 				visited.insert(cur);

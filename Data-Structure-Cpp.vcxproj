@@ -190,6 +190,7 @@
     <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise05_SlidingWindow.h" />
     <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise06_MonotonousStack.h" />
     <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise07_MorrisTraversal.h" />
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise08_Power.h" />
     <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\main_advanced.h" />
     <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise00_NowcoderTools.h" />
     <ClInclude Include="Data-Structure-Cpp\02.Nowcoder_Intermediate\Exercise01.h" />
@@ -255,6 +256,11 @@
     <ClInclude Include="Data-Structure-Cpp\04.Offer\Exercise03.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Offer\Exercise04.h" />
     <ClInclude Include="Data-Structure-Cpp\04.Offer\main_offer.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise00_DpTools.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise01.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise02.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise03.h" />
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\main_dp.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

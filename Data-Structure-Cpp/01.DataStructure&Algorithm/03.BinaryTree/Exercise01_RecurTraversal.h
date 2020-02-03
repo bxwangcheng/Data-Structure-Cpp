@@ -5,11 +5,11 @@ void RecurTraversal(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	Print(head->value_ + " ");
-	RecurTraversal(head->left_);
-	Print(head->value_ + " ");
-	RecurTraversal(head->right_);
-	Print(head->value_ + " ");
+	Print(head->value + " ");
+	RecurTraversal(head->left);
+	Print(head->value + " ");
+	RecurTraversal(head->right);
+	Print(head->value + " ");
 }
 
 /*¶þ²æÊ÷ÏÈÐò±éÀú£¨µÝ¹é£©*/
@@ -17,9 +17,9 @@ void PreTraversalRecur(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	Print(head->value_ + " ");
-	PreTraversalRecur(head->left_);
-	PreTraversalRecur(head->right_);
+	Print(head->value + " ");
+	PreTraversalRecur(head->left);
+	PreTraversalRecur(head->right);
 }
 
 /*¶þ²æÊ÷ÖÐÐò±éÀú£¨µÝ¹é£©*/
@@ -27,9 +27,9 @@ void MidTraversalRecur(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	MidTraversalRecur(head->left_);
-	Print(head->value_ + " ");
-	MidTraversalRecur(head->right_);
+	MidTraversalRecur(head->left);
+	Print(head->value + " ");
+	MidTraversalRecur(head->right);
 }
 
 /*¶þ²æÊ÷ºóÐò±éÀú£¨µÝ¹é£©*/
@@ -37,7 +37,7 @@ void PosTraversalRecur(TreeNode* head) {
 	if (head == nullptr) {
 		return;
 	}
-	PosTraversalRecur(head->left_);
-	PosTraversalRecur(head->right_);
-	Print(head->value_ + " ");
+	PosTraversalRecur(head->left);
+	PosTraversalRecur(head->right);
+	Print(head->value + " ");
 }

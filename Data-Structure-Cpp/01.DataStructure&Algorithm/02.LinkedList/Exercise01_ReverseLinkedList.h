@@ -7,8 +7,8 @@ ListNode* ReverseLinkedList(ListNode* head) {
 	ListNode* last = nullptr;
 	ListNode* next = nullptr;
 	while (head != nullptr) {
-		next = head->next_;
-		head->next_ = last;
+		next = head->next;
+		head->next = last;
 		last = head;
 		head = next;
 	}
@@ -22,10 +22,10 @@ BinaryListNode* ReverseLinkedList(BinaryListNode* head) {
 	BinaryListNode* last = nullptr;
 	BinaryListNode* next = nullptr;
 	while (head != nullptr) {
-		next = head->next_;
-		last = head->last_;
-		head->next_ = last;
-		head->last_ = next;
+		next = head->next;
+		last = head->last;
+		head->next = last;
+		head->last = next;
 		last = head;
 		head = next;
 	}

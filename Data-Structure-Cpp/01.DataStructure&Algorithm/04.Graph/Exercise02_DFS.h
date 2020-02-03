@@ -8,16 +8,16 @@ void Dfs(GraphNode* node) {
 	stack<GraphNode*> stk;
 	unordered_set<GraphNode*> visited;
 	stk.push(node);
-	Print(node->value_ + " ");
+	Print(node->value + " ");
 	visited.insert(node);
 	while (!stk.empty()) {
 		GraphNode* cur = stk.top();
 		stk.pop();
-		for (auto it = cur->nexts_.begin(); it != cur->nexts_.end(); it++) {
+		for (auto it = cur->nexts.begin(); it != cur->nexts.end(); it++) {
 			if (visited.find(*it) == visited.end()) {
 				stk.push(cur);
 				stk.push(*it);
-				Print((*it)->value_ + " ");
+				Print((*it)->value + " ");
 				visited.insert(*it);
 				break;
 			}

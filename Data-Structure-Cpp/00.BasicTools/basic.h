@@ -78,6 +78,20 @@ void Print(const vector<vector<int>>& x) {
 	Println(output);
 }
 
+void Println(const vector<vector<int>>& x) {
+	string output = "";
+	int ROW = x.size();
+	int COL = x[0].size();
+	for (int row = 0; row < ROW; row++) {
+		string row_str = "";
+		for (int col = 0; col < COL; col++) {
+			row_str += to_string(x[row][col]) + "\t\t";
+		}
+		output += row_str + "\n";
+	}
+	Println(output);
+}
+
 void Println(string str) {
 	str += "\n";
 	const char* p = (char*)str.c_str();

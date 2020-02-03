@@ -1,10 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
     <Filter Include="头文件">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
@@ -42,6 +38,16 @@
     </Filter>
     <Filter Include="头文件\00.基本工具">
       <UniqueIdentifier>{e5a7516b-4a6d-4b55-8829-1f97b88f9ce9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\05.专题">
+      <UniqueIdentifier>{1f71427a-26d1-4619-b0f6-bf162e2080db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\05.专题\01.暴力递归到动态规划">
+      <UniqueIdentifier>{11d2d434-a318-4e70-9b04-0e94bf191fb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -364,6 +370,24 @@
     </ClInclude>
     <ClInclude Include="Data-Structure-Cpp\04.Offer\main_offer.h">
       <Filter>头文件\04.剑指Offer</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise01.h">
+      <Filter>头文件\05.专题\01.暴力递归到动态规划</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise00_DpTools.h">
+      <Filter>头文件\05.专题\01.暴力递归到动态规划</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\main_dp.h">
+      <Filter>头文件\05.专题\01.暴力递归到动态规划</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise02.h">
+      <Filter>头文件\05.专题\01.暴力递归到动态规划</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\05.Thematic\01.DynamicProgramming\Exercise03.h">
+      <Filter>头文件\05.专题\01.暴力递归到动态规划</Filter>
+    </ClInclude>
+    <ClInclude Include="Data-Structure-Cpp\01.DataStructure&amp;Algorithm\05.Advanced\Exercise08_Power.h">
+      <Filter>头文件\01.数据结构与算法\05.高级</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

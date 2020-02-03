@@ -7,6 +7,7 @@
 #include "Exercise05_SlidingWindow.h"
 #include "Exercise06_MonotonousStack.h"
 #include "Exercise07_MorrisTraversal.h"
+#include "Exercise08_Power.h"
 
 void test_trie(void) {
 	Trie* trie = new Trie();
@@ -60,11 +61,17 @@ void test_monostack(void) {
 
 void test_morris(void) {
 	TreeNode* root = new TreeNode(1);
-	root->left_ = new TreeNode(2);
-	root->right_ = new TreeNode(3);
-	root->left_->left_ = new TreeNode(4);
-	root->left_->right_ = new TreeNode(5);
-	root->right_->left_ = new TreeNode(6);
-	root->right_->right_ = new TreeNode(7);
+	root->left = new TreeNode(2);
+	root->right = new TreeNode(3);
+	root->left->left = new TreeNode(4);
+	root->left->right = new TreeNode(5);
+	root->right->left = new TreeNode(6);
+	root->right->right = new TreeNode(7);
 	MorrisPos(root);
+}
+
+void test_matrix() {
+	vector<vector<int>> matrix = {	{1, 1},
+									{1, 0} };
+	Println(MatrixPower(matrix,2));
 }

@@ -7,12 +7,12 @@ using namespace std;
 
 struct Graph
 {
-	unordered_map<int, GraphNode*> nodes_;
-	unordered_set<GraphEdge*> edges_;
+	unordered_map<int, GraphNode*> nodes;
+	unordered_set<GraphEdge*> edges;
 
 	Graph() :
-		nodes_(unordered_map<int, GraphNode*>()),
-		edges_(unordered_set<GraphEdge*>())
+		nodes(unordered_map<int, GraphNode*>()),
+		edges(unordered_set<GraphEdge*>())
 	{
 	}
 };

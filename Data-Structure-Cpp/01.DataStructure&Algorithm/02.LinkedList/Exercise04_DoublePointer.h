@@ -7,17 +7,17 @@ bool Palindrome(ListNode* head) {
 	}
 	ListNode* slow_ptr = head;
 	ListNode* fast_ptr = head;
-	while (fast_ptr != nullptr && fast_ptr->next_ != nullptr) {
-		fast_ptr = fast_ptr->next_->next_;
-		slow_ptr = slow_ptr->next_;
+	while (fast_ptr != nullptr && fast_ptr->next != nullptr) {
+		fast_ptr = fast_ptr->next->next;
+		slow_ptr = slow_ptr->next;
 	}
 	ListNode* tmp = ReverseLinkedList(slow_ptr);
 	while (tmp != head && tmp != nullptr) {
-		if (tmp->value_ != head->value_) {
+		if (tmp->value != head->value) {
 			return false;
 		}
-		tmp = tmp->next_;
-		head = head->next_;
+		tmp = tmp->next;
+		head = head->next;
 	}
 	return true;
 }

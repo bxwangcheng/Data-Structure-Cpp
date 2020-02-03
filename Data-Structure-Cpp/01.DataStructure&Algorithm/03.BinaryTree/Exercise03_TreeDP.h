@@ -5,8 +5,8 @@ int Height(TreeNode* head) {
 	if (head == nullptr) {
 		return 0;
 	}
-	int left_height = Height(head->left_);
-	int right_height = Height(head->right_);
+	int left_height = Height(head->left);
+	int right_height = Height(head->right);
 	return max(left_height, right_height) + 1;
 }
 
@@ -35,10 +35,10 @@ BstProcessInfo* BstProcess(TreeNode* head) {
 	if (head == nullptr) {
 		return nullptr;
 	}
-	int min = head->value_;
-	int max = head->value_;
-	BstProcessInfo* left_data = BstProcess(head->left_);
-	BstProcessInfo* right_data = BstProcess(head->right_);
+	int min = head->value;
+	int max = head->value;
+	BstProcessInfo* left_data = BstProcess(head->left);
+	BstProcessInfo* right_data = BstProcess(head->right);
 	if (left_data != nullptr) {
 		min = min(left_data->min_, min);
 		max = max(left_data->max_, max);
@@ -48,10 +48,10 @@ BstProcessInfo* BstProcess(TreeNode* head) {
 		max = max(right_data->max_, max);
 	}
 	bool bst = true;
-	if (left_data != nullptr && (!left_data->bst_ || left_data->max_ > head->value_)) {
+	if (left_data != nullptr && (!left_data->bst_ || left_data->max_ > head->value)) {
 		bst = false;
 	}
-	if (right_data != nullptr && (!right_data->bst_ || right_data->min_ < head->value_)) {
+	if (right_data != nullptr && (!right_data->bst_ || right_data->min_ < head->value)) {
 		bst = false;
 	}
 	return new BstProcessInfo(bst, min, max);
@@ -76,13 +76,13 @@ bool CompleteBinaryTree(TreeNode* head) {
 	while (!q.empty()) {
 		TreeNode* cur = q.front();
 		q.pop();
-		if (cur->left_ == nullptr && cur->right_ != nullptr) {
+		if (cur->left == nullptr && cur->right != nullptr) {
 			return false;
 		}
-		else if(cur->left_ == nullptr || cur->right_ == nullptr){
+		else if(cur->left == nullptr || cur->right == nullptr){
 			leaf = true;
 		}
-		if (leaf && (cur->left_ != nullptr || cur->right_ != nullptr)) {
+		if (leaf && (cur->left != nullptr || cur->right != nullptr)) {
 			return false;
 		}
 	}
@@ -105,8 +105,8 @@ BtProcessInfo* BtProcess(TreeNode* head){
 	if (head == nullptr) {
 		return new BtProcessInfo(true, 0);
 	}
-	BtProcessInfo* left_info = BtProcess(head->left_);
-	BtProcessInfo* right_info = BtProcess(head->right_);
+	BtProcessInfo* left_info = BtProcess(head->left);
+	BtProcessInfo* right_info = BtProcess(head->right);
 	int height = max(left_info->height_, right_info->height_) + 1;
 	bool balanced = true;
 	if (!left_info->balanced_ || !right_info->balanced_) {

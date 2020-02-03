@@ -5,15 +5,15 @@ class TreeNode {
 
 public:
 	TreeNode(int value) : 
-	value_(value),
-	left_(nullptr),
-	right_(nullptr)
+	value(value),
+	left(nullptr),
+	right(nullptr)
 	{}
 
 public:
-	int value_;
-	TreeNode* left_;
-	TreeNode* right_;
+	int value;
+	TreeNode* left;
+	TreeNode* right;
 };
 
 void PrintNode(TreeNode* root);
@@ -42,9 +42,9 @@ void PrintNodeInternal(vector<TreeNode*> nodes, int level, int maxLevel) {
 	for (int i = 0; i < nodes.size(); i++) {
         if (nodes[i] != nullptr) {
             TreeNode* cur = nodes[i];
-            Print(cur->value_);
-            newNodes.push_back(cur->left_);
-            newNodes.push_back(cur->right_);
+            Print(cur->value);
+            newNodes.push_back(cur->left);
+            newNodes.push_back(cur->right);
         }
         else {
             newNodes.push_back(nullptr);
@@ -65,14 +65,14 @@ void PrintNodeInternal(vector<TreeNode*> nodes, int level, int maxLevel) {
                 continue;
             }
 
-            if (cur->left_ != nullptr)
+            if (cur->left != nullptr)
                 Print("/");
             else
                 PrintWhitespaces(1);
 
             PrintWhitespaces(i + i - 1);
 
-            if (cur->right_ != nullptr)
+            if (cur->right != nullptr)
                 Print("\\");
             else
                 PrintWhitespaces(1);
@@ -93,7 +93,7 @@ void PrintWhitespaces(int count) {
 int MaxLevel(TreeNode* node) {
     if (node == nullptr)
         return 0;
-    return max(MaxLevel(node->left_), MaxLevel(node->right_)) + 1;
+    return max(MaxLevel(node->left), MaxLevel(node->right)) + 1;
 }
 
 bool AllElementsNull(vector<TreeNode*> list) {
@@ -120,28 +120,28 @@ TreeNode* BuildTestTree(int type) {
 
     switch (type) {
     case 0:
-        head->left_ = n2;
-        head->right_ = n3;
-        n2->left_ = n4;
-        n2->right_ = n5;
-        n3->left_ = n6;
-        n3->right_ = n7;
+        head->left = n2;
+        head->right = n3;
+        n2->left = n4;
+        n2->right = n5;
+        n3->left = n6;
+        n3->right = n7;
         break;
 
     case 1:
-        head->left_ = n2;
-        head->right_ = nullptr;
-        n2->left_ = n4;
-        n2->right_ = n5;
+        head->left = n2;
+        head->right = nullptr;
+        n2->left = n4;
+        n2->right = n5;
         break;
 
     case 2:
-        head->left_ = n2;
-        head->right_ = n3;
-        n2->left_ = n4;
-        n2->right_ = n5;
-        n3->left_ = nullptr;
-        n3->right_ = n7;
+        head->left = n2;
+        head->right = n3;
+        n2->left = n4;
+        n2->right = n5;
+        n3->left = nullptr;
+        n3->right = n7;
         break;
     }
     

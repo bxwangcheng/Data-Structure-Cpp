@@ -6,13 +6,13 @@ struct GraphNode;
 struct GraphEdge
 {
 	int weight_;
-	GraphNode* from_;
-	GraphNode* to_;
+	GraphNode* from;
+	GraphNode* to;
 
 	GraphEdge(int weight, GraphNode* from, GraphNode* to) :
 		weight_(weight),
-		from_(from),
-		to_(to)
+		from(from),
+		to(to)
 	{}
 };
 

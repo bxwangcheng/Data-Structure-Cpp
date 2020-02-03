@@ -7,30 +7,30 @@ struct GraphEdge;
 
 struct GraphNode
 {
-	string value_;
-	int in_;
-	int out_;
-	unordered_set<GraphNode*> nexts_;
-	unordered_set<GraphEdge*> edges_;
+	string value;
+	int in;
+	int out;
+	unordered_set<GraphNode*> nexts;
+	unordered_set<GraphEdge*> edges;
 
 	GraphNode(string value) :
-		value_(value),
-		in_(0),
-		out_(0),
-		nexts_(unordered_set<GraphNode*>()),
-		edges_(unordered_set<GraphEdge*>())
+		value(value),
+		in(0),
+		out(0),
+		nexts(unordered_set<GraphNode*>()),
+		edges(unordered_set<GraphEdge*>())
 	{}
 };
 
 struct ValueAscend {
 	bool operator()(const GraphNode* a, const GraphNode* b) const {
-		return a->value_ < b->value_;
+		return a->value < b->value;
 	}
 };
 
 struct ValueDescend {
 	bool operator()(const GraphNode* a, const GraphNode* b) const {
-		return a->value_ > b->value_;
+		return a->value > b->value;
 	}
 };
 

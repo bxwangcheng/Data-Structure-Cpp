@@ -10,29 +10,29 @@ void Morris(TreeNode* root) {
 	TreeNode* cur = root;
 	TreeNode* rightmost = nullptr;
 	while (cur != nullptr) {
-		rightmost = cur->left_;
+		rightmost = cur->left;
 		if (rightmost != nullptr) {
-			while (rightmost->right_ != nullptr && rightmost->right_ != cur) {
-				rightmost = rightmost->right_;
+			while (rightmost->right != nullptr && rightmost->right != cur) {
+				rightmost = rightmost->right;
 			}
-			if (rightmost->right_ == nullptr) {
-				Print(cur->value_);
+			if (rightmost->right == nullptr) {
+				Print(cur->value);
 				Print(" ");
-				rightmost->right_ = cur;
-				cur = cur->left_;
+				rightmost->right = cur;
+				cur = cur->left;
 				continue;
 			}
 			else {
-				Print(cur->value_);
+				Print(cur->value);
 				Print(" ");
-				rightmost->right_ = nullptr;
+				rightmost->right = nullptr;
 			}
 		}
 		else {
-			Print(cur->value_);
+			Print(cur->value);
 			Print(" ");
 		}
-		cur = cur->right_;
+		cur = cur->right;
 	}
 	Println();
 }
@@ -43,27 +43,27 @@ void MorrisPre(TreeNode* root) {
 	TreeNode* cur = root;
 	TreeNode* rightmost = nullptr;
 	while (cur != nullptr) {
-		rightmost = cur->left_;
+		rightmost = cur->left;
 		if (rightmost != nullptr) {
-			while (rightmost->right_ != nullptr && rightmost->right_ != cur) {
-				rightmost = rightmost->right_;
+			while (rightmost->right != nullptr && rightmost->right != cur) {
+				rightmost = rightmost->right;
 			}
-			if (rightmost->right_ == nullptr) {
-				Print(cur->value_);
+			if (rightmost->right == nullptr) {
+				Print(cur->value);
 				Print(" ");
-				rightmost->right_ = cur;
-				cur = cur->left_;
+				rightmost->right = cur;
+				cur = cur->left;
 				continue;
 			}
 			else {
-				rightmost->right_ = nullptr;
+				rightmost->right = nullptr;
 			}
 		}
 		else {
-			Print(cur->value_);
+			Print(cur->value);
 			Print(" ");
 		}
-		cur = cur->right_;
+		cur = cur->right;
 	}
 	Println();
 }
@@ -74,23 +74,23 @@ void MorrisMid(TreeNode* root) {
 	TreeNode* cur = root;
 	TreeNode* rightmost = nullptr;
 	while (cur != nullptr) {
-		rightmost = cur->left_;
+		rightmost = cur->left;
 		if (rightmost != nullptr) {
-			while (rightmost->right_ != nullptr && rightmost->right_ != cur) {
-				rightmost = rightmost->right_;
+			while (rightmost->right != nullptr && rightmost->right != cur) {
+				rightmost = rightmost->right;
 			}
-			if (rightmost->right_ == nullptr) {
-				rightmost->right_ = cur;
-				cur = cur->left_;
+			if (rightmost->right == nullptr) {
+				rightmost->right = cur;
+				cur = cur->left;
 				continue;
 			}
 			else {
-				rightmost->right_ = nullptr;
+				rightmost->right = nullptr;
 			}
 		}
-		Print(cur->value_);
+		Print(cur->value);
 		Print(" ");
-		cur = cur->right_;
+		cur = cur->right;
 	}
 	Println();
 }
@@ -101,22 +101,22 @@ void MorrisPos(TreeNode* root) {
 	TreeNode* cur = root;
 	TreeNode* rightmost = nullptr;
 	while (cur != nullptr) {
-		rightmost = cur->left_;
+		rightmost = cur->left;
 		if (rightmost != nullptr) {
-			while (rightmost->right_ != nullptr && rightmost->right_ != cur) {
-				rightmost = rightmost->right_;
+			while (rightmost->right != nullptr && rightmost->right != cur) {
+				rightmost = rightmost->right;
 			}
-			if (rightmost->right_ == nullptr) {
-				rightmost->right_ = cur;
-				cur = cur->left_;
+			if (rightmost->right == nullptr) {
+				rightmost->right = cur;
+				cur = cur->left;
 				continue;
 			}
 			else {
-				rightmost->right_ = nullptr;
-				ReversePrintRightBound(cur->left_);
+				rightmost->right = nullptr;
+				ReversePrintRightBound(cur->left);
 			}
 		}
-		cur = cur->right_;
+		cur = cur->right;
 	}
 	ReversePrintRightBound(root);
 	Println();
@@ -128,21 +128,21 @@ void ReversePrintRightBound(TreeNode* node) {
 	TreeNode* next = nullptr;
 	TreeNode* last = nullptr;
 	while (node != nullptr) {
-		next = node->right_;
-		node->right_ = last;
+		next = node->right;
+		node->right = last;
 		last = node;
 		node = next;
 	}
 	while (last != nullptr) {
-		Print(last->value_);
+		Print(last->value);
 		Print(" ");
-		last = last->right_;
+		last = last->right;
 	}
 	next = nullptr;
 	node = nullptr;
 	while (last != nullptr) {
-		next = last->right_;
-		last->right_ = node;
+		next = last->right;
+		last->right = node;
 		node = last;
 		last = next;
 	}

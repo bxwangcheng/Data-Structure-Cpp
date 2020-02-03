@@ -8,7 +8,7 @@
 
 void test_graph(void) {
 	//Graph* graph = GenerateGraph();
-	//GraphNode* node = graph->nodes_.at(1);
+	//GraphNode* node = graph->nodes.at(1);
 	//Dfs(node);
 	//auto res = TopologySort(GenerateTopologyGraph());
 	//GraphNode* a = new GraphNode("A");
@@ -58,7 +58,7 @@ void test_graph(void) {
 	//auto res = Prim(GeneratePrimGraph());
 	//auto graph = GenerateKruskalGraph();
 	//vector<GraphNode*> nodes;
-	//for (auto it = graph->nodes_.begin(); it != graph->nodes_.end(); it++) {
+	//for (auto it = graph->nodes.begin(); it != graph->nodes.end(); it++) {
 	//	nodes.push_back(it->second);
 	//}
 	//UnionFind* unionfind = new UnionFind(nodes);
@@ -74,8 +74,8 @@ void test_graph(void) {
 	//auto isSame = unionfind->SameSet(*n1, *n2);
 	//Println();
 
-	auto res = Dijkstra(GeneratePrimGraph()->nodes_[0]);
+	auto res = Dijkstra(GeneratePrimGraph()->nodes[0]);
 	for (auto it = res.begin(); it != res.end(); it++) {
-		Println(it->first->value_ + ": " + to_string(it->second));
+		Println(it->first->value + ": " + to_string(it->second));
 	}
 }

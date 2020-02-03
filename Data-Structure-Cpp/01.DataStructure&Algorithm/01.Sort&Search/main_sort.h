@@ -55,7 +55,7 @@ void test_sort(void) {
 
 	//
 	//while (!heap->isEmpty()) {
-	//	Println(heap->Pop()->value_);
+	//	Println(heap->Pop()->value);
 	//}
 	
 }

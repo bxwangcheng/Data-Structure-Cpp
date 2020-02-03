@@ -3,15 +3,15 @@
 
 /*拓扑排序*/
 vector<GraphNode*> TopologySort(Graph* graph) {
-	if (&graph == nullptr || &(graph->nodes_) == nullptr) {
+	if (&graph == nullptr || &(graph->nodes) == nullptr) {
 		return {};
 	}
 	unordered_map<GraphNode*, int> in_map;
 	queue<GraphNode*> zero_in;
 	// 记录初始入度，入度为0直接进队列
-	for (auto it = graph->nodes_.begin(); it != graph->nodes_.end(); it++) {
-		in_map.insert(pair<GraphNode*, int>(it->second, it->second->in_));
-		if (it->second->in_ == 0) {
+	for (auto it = graph->nodes.begin(); it != graph->nodes.end(); it++) {
+		in_map.insert(pair<GraphNode*, int>(it->second, it->second->in));
+		if (it->second->in == 0) {
 			zero_in.push(it->second);
 		}
 	}
@@ -20,7 +20,7 @@ vector<GraphNode*> TopologySort(Graph* graph) {
 		GraphNode* cur = zero_in.front();
 		zero_in.pop();
 		result.push_back(cur);
-		for (auto it = cur->nexts_.begin(); it != cur->nexts_.end(); it++) {
+		for (auto it = cur->nexts.begin(); it != cur->nexts.end(); it++) {
 			GraphNode* next = *it;
 			in_map.insert(pair<GraphNode*, int>(next, in_map.at(next)--));
 			if (in_map[next] == 0) {

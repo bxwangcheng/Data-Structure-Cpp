@@ -4,11 +4,12 @@
 #include "01.DataStructure&Algorithm/03.BinaryTree/main_tree.h"
 #include "01.DataStructure&Algorithm/04.Graph/main_graph.h"
 #include "01.DataStructure&Algorithm/05.Advanced/main_advanced.h"
-#include "02.Nowcoder_Intermediate/main_nowcoder_intermediate.h"
+#include "02.Nowcoder_Basic/main_nowcoder_basic.h"
 #include "03.Nowcoder_Advanced/main_nowcoder_advanced.h"
-#include "04.Offer/main_offer.h"
-
-
+#include "04.Nowcoder_Intermediate/main_nowcoder_intermediate.h"
+#include "05.Nowcoder_Senior/main_nowcoder_senior.h"
+#include "06.Offer/main_offer.h"
+#include "07.Thematic/01.DynamicProgramming/main_dp.h"
 // wc version
 int main(void) {
 	//test_sort();
@@ -35,6 +36,7 @@ int main(void) {
 	//print_vector(a);
 	//bubble_sort(a);
 	//print_vector(a);
-
+	//test_matrix();
+	//test_dp();
 	test_nowcoder();
 }

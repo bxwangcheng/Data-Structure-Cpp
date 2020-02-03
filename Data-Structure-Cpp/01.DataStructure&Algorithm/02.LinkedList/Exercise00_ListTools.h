@@ -5,36 +5,36 @@ class ListNode {
 
 public:
 	ListNode(int value) :
-		value_(value),
-		next_(nullptr)
+		value(value),
+		next(nullptr)
 	{}
 
 public:
-	int value_;
-	ListNode* next_;
+	int value;
+	ListNode* next;
 };
 
 class BinaryListNode {
 
 public:
 	BinaryListNode(int value) : 
-		value_(value),
-		last_(nullptr),
-		next_(nullptr)
+		value(value),
+		last(nullptr),
+		next(nullptr)
 	{}
 
 public:
-	int value_;
-	BinaryListNode* last_;
-	BinaryListNode* next_;
+	int value;
+	BinaryListNode* last;
+	BinaryListNode* next;
 };
 
 void Print(ListNode* head) {
 	ListNode* cur = head;
 	string output;
 	while (cur != nullptr) {
-		output += to_string(cur->value_) + "->";
-		cur = cur->next_;
+		output += to_string(cur->value) + "->";
+		cur = cur->next;
 	}
 	output += "null";
 	Println(output);
@@ -43,16 +43,16 @@ void Print(ListNode* head) {
 void Print(BinaryListNode* head) {
 	BinaryListNode* cur = head;
 	string output;
-	while (cur->next_ != nullptr) {
-		output += to_string(cur->value_) + "->";
-		cur = cur->next_;
+	while (cur->next != nullptr) {
+		output += to_string(cur->value) + "->";
+		cur = cur->next;
 	}
-	output += to_string(cur->value_) + "->null";
+	output += to_string(cur->value) + "->null";
 	Println(output);
 	output = "";
 	while (cur != nullptr) {
-		output += to_string(cur->value_) + "->";
-		cur = cur->last_;
+		output += to_string(cur->value) + "->";
+		cur = cur->last;
 	}
 	output += "null";
 	Println(output);
@@ -65,8 +65,8 @@ ListNode* GenerateLinkedList(int max_size, int max_value) {
 	ListNode* cur = head;
 	while (size > 1) {
 		int value = (rand() % (2 * max_size + 1)) - max_size;
-		cur->next_ = new ListNode(value);
-		cur = cur->next_;
+		cur->next = new ListNode(value);
+		cur = cur->next;
 		size--;
 	}
 	return head;
@@ -79,9 +79,9 @@ BinaryListNode* GenerateBinaryLinkedList(int max_size, int max_value) {
 	BinaryListNode* cur = head;
 	while (size > 1) {
 		int value = (rand() % (2 * max_size + 1)) - max_size;
-		cur->next_ = new BinaryListNode(value);
-		cur->next_->last_ = cur;
-		cur = cur->next_;
+		cur->next = new BinaryListNode(value);
+		cur->next->last = cur;
+		cur = cur->next;
 		size--;
 	}
 	return head;
@@ -94,8 +94,8 @@ ListNode* ConvertToLinkedList(vector<int> arr) {
 	ListNode* head = new ListNode(arr[0]);
 	ListNode* cur = head;
 	for (int i = 1; i < arr.size(); i++) {
-		cur->next_ = new ListNode(arr[i]);
-		cur = cur->next_;
+		cur->next = new ListNode(arr[i]);
+		cur = cur->next;
 	}
 	return head;
 }

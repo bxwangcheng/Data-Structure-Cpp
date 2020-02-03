@@ -23,14 +23,14 @@ class ListNodeR {
 
 public:
 	ListNodeR(int value) :
-		value_(value),
-		next_(nullptr),
+		value(value),
+		next(nullptr),
 		rand_(nullptr)
 	{}
 
 public:
-	int value_;
-	ListNodeR* next_;
+	int value;
+	ListNodeR* next;
 	ListNodeR* rand_;
 };
 
@@ -40,13 +40,13 @@ ListNodeR* GenerateTestList() {
 	ListNodeR* n3 = new ListNodeR(3);
 	ListNodeR* n4 = new ListNodeR(4);
 	ListNodeR* n5 = new ListNodeR(5);
-	head->next_ = n2;
+	head->next = n2;
 	head->rand_ = n3;
-	n2->next_ = n3;
+	n2->next = n3;
 	n2->rand_ = head;
-	n3->next_ = n4;
+	n3->next = n4;
 	n3->rand_ = n3;
-	n4->next_ = n5;
+	n4->next = n5;
 	n4->rand_ = n2;
 	n5->rand_ = n4;
 	return head;
@@ -59,14 +59,14 @@ ListNodeR* Duplicate(ListNodeR* head) {
 	unordered_map<ListNodeR*, ListNodeR*> tmp;
 	ListNodeR* cur = head;
 	while (cur != nullptr) {
-		tmp.insert(pair<ListNodeR*, ListNodeR*>(cur, new ListNodeR(cur->value_)));
-		cur = cur->next_;
+		tmp.insert(pair<ListNodeR*, ListNodeR*>(cur, new ListNodeR(cur->value)));
+		cur = cur->next;
 	}
 	cur = head;
 	while (cur != nullptr) {
-		tmp[cur]->next_ = tmp[cur->next_];
+		tmp[cur]->next = tmp[cur->next];
 		tmp[cur]->rand_ = tmp[cur->rand_];
-		cur = cur->next_;
+		cur = cur->next;
 	}
 	return tmp[head];
 }
@@ -77,24 +77,24 @@ ListNodeR* DuplicateV2(ListNodeR* head) {
 	}
 	ListNodeR* cur = head;
 	while (cur != nullptr) {
-		ListNodeR* new_node = new ListNodeR(cur->value_);
-		new_node->next_ = cur->next_;
-		cur->next_ = new_node;
-		cur = new_node->next_;
+		ListNodeR* new_node = new ListNodeR(cur->value);
+		new_node->next = cur->next;
+		cur->next = new_node;
+		cur = new_node->next;
 	}
 	cur = head;
 	while (cur != nullptr) {
-		cur->next_->rand_ = cur->rand_->next_;
-		cur = cur->next_->next_;
+		cur->next->rand_ = cur->rand_->next;
+		cur = cur->next->next;
 	}
-	ListNodeR* new_head = head->next_;
+	ListNodeR* new_head = head->next;
 	cur = head;
-	while (cur->next_->next_ != nullptr) {
-		ListNodeR* next = cur->next_->next_;
-		cur->next_->next_ = cur->next_->next_->next_;
-		cur->next_ = next;
-		cur = cur->next_;
+	while (cur->next->next != nullptr) {
+		ListNodeR* next = cur->next->next;
+		cur->next->next = cur->next->next->next;
+		cur->next = next;
+		cur = cur->next;
 	}
-	cur->next_ = nullptr;
+	cur->next = nullptr;
 	return new_head;
 }

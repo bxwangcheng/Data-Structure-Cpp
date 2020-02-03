@@ -13,8 +13,8 @@ unordered_map<GraphNode*, int> Dijkstra(GraphNode* head) {
 	GraphNode* min_node = getNextNode(distance_map, selected_nodes);
 	while (min_node != nullptr) {
 		int curr_distance = distance_map[min_node];
-		for (auto it = min_node->edges_.begin(); it != min_node->edges_.end(); it++) {
-			GraphNode* to_node = (*it)->to_;
+		for (auto it = min_node->edges.begin(); it != min_node->edges.end(); it++) {
+			GraphNode* to_node = (*it)->to;
 			int next_distance = (*it)->weight_;
 			if (distance_map.find(to_node) == distance_map.end()) {
 				distance_map.insert(pair<GraphNode*, int>(to_node, curr_distance + next_distance));
